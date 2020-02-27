@@ -7,6 +7,7 @@ function getVid(){
 function playVid() { 
 
 	console.log("Play Video");
+	video.play()
 } 
 
 function pauseVid() { 
