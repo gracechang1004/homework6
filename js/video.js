@@ -27,11 +27,12 @@ function increaseSpeed() {
 
 	video.playbackRate += 0.25;
 	console.log("Speed is "+ video.playbackRate);
+
 } 
 
 function skipAhead() {
-
-	console.log("Current location is "+ video.currentTime);
+	video.currentTime += 60
+	console.log("Current location is "+ video.currentTime + " seconds");
 } 
 
 function mute() { 
