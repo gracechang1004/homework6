@@ -8,6 +8,7 @@ function playVid() {
 
 	console.log("Play Video");
 	video.play();
+	document.querySelector("#volume").innerHTML = (100 + "%")
 } 
 
 function pauseVid() { 
@@ -33,6 +34,7 @@ function increaseSpeed() {
 function skipAhead() {
 	video.currentTime += 60
 	console.log("Current location is "+ video.currentTime + " seconds");
+
 } 
 
 function mute() { 
@@ -53,9 +55,7 @@ function mute() {
 }
 
 function changeVolume() {
-	document.getElementById("volumeSlider").innerHTML = this.value + "%";
-	console.log("Volume is " this.value);
-	video.volume=this.value/100
+	
 }
        
 
