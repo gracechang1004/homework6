@@ -7,27 +7,31 @@ function getVid(){
 function playVid() { 
 
 	console.log("Play Video");
-	video.play()
+	video.play();
 } 
 
 function pauseVid() { 
 
 	console.log("Pause Video");
+	video.pause();
 } 
 
 function decreaseSpeed() { 
 
-  	console.log("Speed is "+ );
+  	video.playbackRate -= 0.2;
+  	console.log("Speed is "+ video.playbackRate);
+
 } 
 
 function increaseSpeed() {
 
-	console.log("Speed is "+ );
+	video.playbackRate += 0.25;
+	console.log("Speed is "+ video.playbackRate);
 } 
 
 function skipAhead() {
 
-	console.log("Current location is "+ );
+	console.log("Current location is "+ video.currentTime);
 } 
 
 function mute() { 
