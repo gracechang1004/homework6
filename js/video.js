@@ -36,10 +36,20 @@ function skipAhead() {
 } 
 
 function mute() { 
-  	
-  		console.log("Unmuted");
-  	
-      	console.log("Muted");
+
+	if (video.muted == false) {
+		video.muted = true;
+		console.log("Muted");
+		document.getElementById("mute").innerHTML = "Unmute";
+
+	}
+	
+	else {
+		video.muted = false;
+		console.log("Unmuted");
+		document.getElementById("mute").innerHTML = "Mute";
+	}
+
 }
 
 function changeVolume() {
