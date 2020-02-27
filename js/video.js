@@ -18,14 +18,14 @@ function pauseVid() {
 
 function decreaseSpeed() { 
 
-  	video.playbackRate -= 0.2;
+	video.playbackRate = video.playbackRate*0.8;
   	console.log("Speed is "+ video.playbackRate);
 
 } 
 
 function increaseSpeed() {
 
-	video.playbackRate += 0.25;
+	video.playbackRate = video.playbackRate*1.25;
 	console.log("Speed is "+ video.playbackRate);
 
 } 
@@ -53,16 +53,20 @@ function mute() {
 }
 
 function changeVolume() {
-;	console.log("Volume is ");
+	document.getElementById("volumeSlider").innerHTML = this.value + "%";
+	console.log("Volume is " this.value);
+	video.volume=this.value/100
 }
        
 
 function gray() { 
 
+	video.style.filter = "grayscale(100%)";;
 	console.log("In grayscale")
 }
 
 function color() {
 
+	video.style.filter = "grayscale(0%)";;
 	console.log("In color") 
 }
