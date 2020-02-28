@@ -78,5 +78,3 @@ function color() {
 	console.log("In color");
 }
 
-
-document.getElementById("p2").style.color = "blue";
