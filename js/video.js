@@ -34,6 +34,10 @@ function increaseSpeed() {
 function skipAhead() {
 	video.currentTime += 60
 	console.log("Current location is "+ video.currentTime + " seconds");
+	if (video.currentTime > video.duration) {
+		video.currentTime = 0;
+		video.playbackRate = 1;
+	}
 
 } 
 
@@ -61,12 +65,12 @@ function changeVolume() {
 
 function gray() { 
 
-	video.style.filter = "grayscale(100%)";;
-	console.log("In grayscale")
+	video.style.filter = "grayscale(100%)";
+	console.log("In grayscale");
 }
 
 function color() {
 
-	video.style.filter = "grayscale(0%)";;
-	console.log("In color") 
+	video.style.filter = "grayscale(0%)";
+	console.log("In color");
 }
