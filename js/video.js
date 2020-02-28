@@ -59,7 +59,10 @@ function mute() {
 }
 
 function changeVolume() {
-	
+    video.volume = document.getElementById("volumeSlider").value/100;
+    document.querySelector("#volume").innerHTML = (video.volume*100 + "%")
+
+
 }
        
 
@@ -74,3 +77,6 @@ function color() {
 	video.style.filter = "grayscale(0%)";
 	console.log("In color");
 }
+
+
+document.getElementById("p2").style.color = "blue";
