@@ -34,9 +34,10 @@ function increaseSpeed() {
 function skipAhead() {
 	video.currentTime += 60
 	console.log("Current location is "+ video.currentTime + " seconds");
-	if (video.currentTime > video.duration) {
+	if (video.currentTime == video.duration) {
 		video.currentTime = 0;
 		video.playbackRate = 1;
+
 	}
 
 } 
