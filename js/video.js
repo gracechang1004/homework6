@@ -72,6 +72,8 @@ function gray() {
 	console.log("In grayscale");
 }
 
+/* grayscale - https://www.w3schools.com/jsref/prop_style_filter.asp*/
+
 function color() {
 
 	video.style.filter = "grayscale(0%)";
