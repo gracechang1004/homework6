@@ -19,27 +19,35 @@
 
 	.play::before {
 		content: url('images/play.png');
-    	display: inline-block; !important
-    	position:relative;
-    	top:500px;
-    	width: 15px; 
-    	height: 15px; 
+    	display: inline-block;
     	transform: scale(0.05);
+    	height: 35px; 
+    	width: 15px;
+    	margin-right: 50px;
+    	float:left;
+
 	}
 
 
 	.pause::before {
 		content: url('images/pause.png');
     	display: inline-block;
-    	position:relative;
-    	width: 15px; 
-    	height: 15px;
     	transform: scale(0.05);
+    	height: 35px; 
+    	width: 15px;
+    	margin-right: 50px;
+    	transform-origin: left;
+    	float:left;
 	}
 
 	/*
-	RESOURCES: before property - https://www.w3schools.com/cssref/sel_before.asp
-			   image size - https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements
+	RESOURCES:
+		before property - https://www.w3schools.com/cssref/sel_before.asp
+		
+		image size - https://css-tricks.com/almanac/properties/c/content/
+		"This is literally an image on the page like <img> would be. It could also be a gradient. Note that you cannot change the dimensions of the image when inserted this way. You could also insert an image by using an empty string for the content, making it display: block in some way, sizing it, and using background-image. That way you could re-size it with background-size."
+
+		float - https://teamtreehouse.com/community/css-transforms-white-space-around-divs-when-css-transforms-applied-i-cant-remove-the-white-space
 	*/
 
 	/*Use CSS before property to display the image before the text in the buttons*/
